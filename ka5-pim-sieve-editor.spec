@@ -73,6 +73,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libsieveeditor.so.5.*.*
 %{_desktopdir}/org.kde.sieveeditor.desktop
 %{_datadir}/config.kcfg/sieveeditorglobalconfig.kcfg
-%{_datadir}/kconf_update/sieveeditor-15.08-kickoff.sh
+%attr(755,root,root) %{_datadir}/kconf_update/sieveeditor-15.08-kickoff.sh
 %{_datadir}/kconf_update/sieveeditor.upd
 %{_datadir}/metainfo/org.kde.sieveeditor.appdata.xml
