@@ -42,6 +42,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Sieve Editor is an editor for Sieve scripts used for email filtering
 on a mail server.
 
+%description -l pl.UTF-8
+Sieve Editor jest edytorem skryptów Sieve wykorzystywanych do filtrowania
+poczty na serwerach pocztowych.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
