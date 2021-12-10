@@ -1,15 +1,15 @@
-%define		kdeappsver	21.08.3
+%define		kdeappsver	21.12.0
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		pim-sieve-editor
 Summary:	Sieve editor
 Name:		ka5-%{kaname}
-Version:	21.08.3
+Version:	21.12.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	287894016c1a2e3e9955fb5adcd34ed9
+# Source0-md5:	c5820abbe7ff4c4e04d7c22f72deeccf
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel
@@ -78,8 +78,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libsieveeditor.so.5.*.*
 %{_desktopdir}/org.kde.sieveeditor.desktop
 %{_datadir}/config.kcfg/sieveeditorglobalconfig.kcfg
-%attr(755,root,root) %{_datadir}/kconf_update/sieveeditor-15.08-kickoff.sh
-%{_datadir}/kconf_update/sieveeditor.upd
 %{_datadir}/metainfo/org.kde.sieveeditor.appdata.xml
 %{_datadir}/qlogging-categories5/sieveeditor.categories
 %{_datadir}/qlogging-categories5/sieveeditor.renamecategories
